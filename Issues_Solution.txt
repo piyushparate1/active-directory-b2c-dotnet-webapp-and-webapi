@@ -1,0 +1,11 @@
+ISSUE:
+After configuration of "Microsoft" as a identity provider below error occurs while sign-in via Microsoft option(Click on Microsoft button in sing-in page):
+We're unable to complete your request
+unauthorized_client: The client does not exist or is not enabled for consumers. If you are the application developer, configure a new application through the App Registrations in the Azure Portal at....
+
+SOLUTION:
+To solve the issue, navigate to the Manifest of your App registration (app regirtration which created for Microsoft identity provider), set below the properties accessTokenAcceptedVersion and signInAudience like below.
+	"accessTokenAcceptedVersion": 2,
+	"signInAudience": "AzureADandPersonalMicrosoftAccount"
+Ref - https://stackoverflow.com/questions/63924622/getting-unauthorized-client-when-trying-to-login-using-microsoft-account
+
