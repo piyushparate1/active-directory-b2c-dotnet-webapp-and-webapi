@@ -170,7 +170,13 @@ namespace TaskWebApp.Controllers
         private async Task<AuthenticationResult> AcquireTokenForScopes(string[] scopes)
         {
             IConfidentialClientApplication cca = MsalAppBuilder.BuildConfidentialClientApplication();
-            var account = await cca.GetAccountAsync(ClaimsPrincipal.Current.GetB2CMsalAccountIdentifier());
+
+            string b2CMsalAccountIdentifier = ClaimsPrincipal.Current.GetB2CMsalAccountIdentifier();
+
+            b2CMsalAccountIdentifier = b2CMsalAccountIdentifier.ToLower();
+
+            var account = await cca.GetAccountAsync(b2CMsalAccountIdentifier);
+            
             return await cca.AcquireTokenSilent(scopes, account).ExecuteAsync();
         }
 
