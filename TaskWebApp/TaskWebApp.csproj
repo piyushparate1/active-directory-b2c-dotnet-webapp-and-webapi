@@ -336,6 +336,15 @@
     <Content Include="Scripts\jquery-2.1.4.min.map" />
     <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.0.min.map" />
+    <None Include="Web.config.contoso">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.config.Debug.contoso">
+      <DependentUpon>Web.config.contoso</DependentUpon>
+    </None>
+    <None Include="Web.config.Release.contoso">
+      <DependentUpon>Web.config.contoso</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">

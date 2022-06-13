@@ -10,23 +10,23 @@
     <add key="webpages:Enabled" value="false" />
     <add key="ClientValidationEnabled" value="true" />
     <add key="UnobtrusiveJavaScriptEnabled" value="true" />
-    <add key="ida:Tenant" value="ogrelogisticsflow.onmicrosoft.com" />
+    <add key="ida:Tenant" value="contoso43678.onmicrosoft.com" />
     <!--MSAL cache needs a tenantId along with the user's objectId to function. It retrieves these two from the claims returned in the id_token. 
         As tenantId is not guaranteed to be present in id_tokens issued by B2C unless the steps listed in this 
         document (https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/AAD-B2C-specifics#caching-with-b2c-in-msalnet). 
         If you are following the workarounds listed in the doc and tenantId claim (tid) is available in the user's token, then please change the 
         code in <ClaimsPrincipalsExtension.cs GetB2CMsalAccountId()> to let MSAL pick this from the claims instead -->
-    <add key="ida:TenantId" value="56372a52-6357-493e-875f-d4207a549850" />
-    <add key="ida:ClientId" value="76819421-6bd4-4e17-b4dd-ba257bf66373" />
-    <add key="ida:ClientSecret" value="ZTk8Q~gNL8HdgfxxcirGCg1lRkNLvqulM1dx7bm_" />
-    <add key="ida:AadInstance" value="https://ogrelogisticsflow.b2clogin.com/tfp/{0}/{1}" />
+    <add key="ida:TenantId" value="3c56baad-89ae-4016-b719-2700ddd89057" />
+    <add key="ida:ClientId" value="16cd422a-1a03-49a9-bff8-1762a3df209c" />
+    <add key="ida:ClientSecret" value="Lv67Q~X6kDwT6K69vBrBkaDCxB0GzUT4ynPLw" />
+    <add key="ida:AadInstance" value="https://contoso43678.b2clogin.com/tfp/{0}/{1}" />
     <add key="ida:RedirectUri" value="https://localhost:44316/" />
     <add key="ida:SignUpSignInPolicyId" value="B2C_1_signupsignin1" />
     <add key="ida:EditProfilePolicyId" value="B2C_1_profileediting1" />
     <add key="ida:ResetPasswordPolicyId" value="B2C_1_passwordreset1" />
     <add key="api:TaskServiceUrl" value="https://localhost:44332/" />
     <!-- The following settings is used for requesting access tokens -->
-    <add key="api:ApiIdentifier" value="https://ogrelogisticsflow.onmicrosoft.com/api/" />
+    <add key="api:ApiIdentifier" value="https://contoso43678.onmicrosoft.com/api/" />
     <add key="api:ReadScope" value="read" />
     <add key="api:WriteScope" value="write" />
   </appSettings>

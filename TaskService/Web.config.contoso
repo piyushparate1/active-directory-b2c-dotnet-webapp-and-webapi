@@ -13,9 +13,9 @@
     <add key="webpages:Enabled" value="false" />
     <add key="ClientValidationEnabled" value="true" />
     <add key="UnobtrusiveJavaScriptEnabled" value="true" />
-    <add key="ida:AadInstance" value="https://ogrelogisticsflow.b2clogin.com/{0}/{1}/v2.0/.well-known/openid-configuration" />
-    <add key="ida:Tenant" value="ogrelogisticsflow.onmicrosoft.com" />
-    <add key="ida:ClientId" value="3962e29f-a575-4b1a-ac22-b493c6d7f4ba" />
+    <add key="ida:AadInstance" value="https://contoso43678.b2clogin.com/{0}/{1}/v2.0/.well-known/openid-configuration" />
+    <add key="ida:Tenant" value="contoso43678.onmicrosoft.com" />
+    <add key="ida:ClientId" value="f45f2a83-a895-4ba4-9e8a-997e220cd4e2" />
     <add key="ida:SignUpSignInPolicyId" value="B2C_1_signupsignin1" />
     <!-- The following settings is used for requesting access tokens -->
     <add key="api:ReadScope" value="read" />
